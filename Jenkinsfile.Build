@@ -1,13 +1,10 @@
 pipeline {
     agent any
-    tools { 
-        maven 'MVN_test' 
-    }
     stages {
         stage ('Initialize') {
             steps {
                 sh '''
-                    echo "M2_HOME = ${MVN_test}"
+                    echo "hello"
                 ''' 
             }
         }
