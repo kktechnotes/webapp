@@ -3,15 +3,13 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                sh '''
-                    echo "hello"
-                ''' 
+             
             }
         }
 
         stage ('Build') {
             steps {
-                sh 'mvn clean package'
+               
             }
         }
     } 
