@@ -1,16 +1,12 @@
 node {
         stage ('Initialize') {
-            steps {
                 sh '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${MVN_test}"
                 ''' 
-            }
         }
 
         stage ('Build') {
-            steps {
                 sh 'mvn clean package'
-            }
         }
 }
